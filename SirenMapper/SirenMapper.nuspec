@@ -9,8 +9,8 @@
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <projectUrl>https://github.com/jaceenet/SirenMapper</projectUrl>    
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
-    <releaseNotes>DotNet Siren classes for doing api responses.</releaseNotes>
+    <description>DotNet Siren classes for doing api responses.</description>
+    <releaseNotes></releaseNotes>
     <copyright>Copyright 2015</copyright>
     <tags>Siren Hypermedia</tags>
   </metadata>
