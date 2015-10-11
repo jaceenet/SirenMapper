@@ -4,7 +4,7 @@ using System.Dynamic;
 
 namespace SirenMapper
 {
-	internal abstract class DynamicJsonClass : DynamicObject
+    public abstract class DynamicJsonClass : DynamicObject
 	{
 		public class IfArrayValue
 		{
