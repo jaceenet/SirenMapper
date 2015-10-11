@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
+    <id>SirenMapper</id>
     <version>$version$</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
+    <title>SirenMapper</title>
+    <authors>Jacob Carstensen</authors>
+    <owners>Jacob Carstensen</owners>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <projectUrl>https://github.com/jaceenet/SirenMapper</projectUrl>    
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
