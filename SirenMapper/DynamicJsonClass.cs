@@ -20,17 +20,18 @@ namespace SirenMapper
 			this.itemsArrays.Add(property, new IfArrayValue { If = ifValue, Value = value});
 		}
 
-		protected T GetDictionaryOrDefault<T>(string name)
-		{
-			if (items.ContainsKey(name))
-			{
-				return (T) items[name];
-			}
+        protected T GetDictionaryOrDefault<T>(string name, T defaultValue = default(T))
+        {
+            if (items.ContainsKey(name))
+            {
+                return (T)items[name];
+            }
 
-			return default(T);
-		}
+            items[name] = defaultValue;
+            return (T)items[name];
+        }
 
-		protected void SetDictionary<T>(string name, T value)
+        protected void SetDictionary<T>(string name, T value)
 		{
 			items[name] = value;
 		}
