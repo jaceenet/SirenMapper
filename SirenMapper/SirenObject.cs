@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 
 namespace SirenMapper
@@ -25,13 +26,13 @@ namespace SirenMapper
 			set { SetDictionary("Class", value); }
 		}
 
-		public object Properties
-		{
-			get { return GetDictionaryOrDefault<object>("Properties"); }
-			set { SetDictionary("Properties", value); }
-		}
+        public dynamic Properties
+        {
+            get { return GetDictionaryOrDefault<ExpandoObject>("Properties", new ExpandoObject()); }
+            set { SetDictionary("Properties", new ExpandoObject()); }
+        }
 
-		public SirenObject(string[] @class = null, dynamic properties = null) : this()
+        public SirenObject(string[] @class = null, dynamic properties = null) : this()
 		{
 			this.Class = @class;
 			this.Properties = properties;
