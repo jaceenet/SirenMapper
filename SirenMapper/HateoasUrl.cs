@@ -12,9 +12,9 @@ namespace SirenMapper
             Secret = secret;
         }
 
-        public string RootUrl { get; }
+        public string RootUrl { get; private set; }
 
-        public string Secret { get; }
+        public string Secret { get; private set; }
 
         public string GetApiUrl(string relative, string[] ignoredquerykeys = null, bool noChecksum = false, string method = "GET")
         {
